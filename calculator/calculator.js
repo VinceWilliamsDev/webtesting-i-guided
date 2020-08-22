@@ -2,6 +2,6 @@ module.exports = {
   add,
 };
 
-function add() {
-  return null;
+function add(...nums) {
+    return nums.reduce((acc, curr) => acc + curr)
 }
